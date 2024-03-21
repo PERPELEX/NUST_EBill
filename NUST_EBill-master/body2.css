@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+main{
+
+    position: absolute;
+    top:10%;
+    height:90vh;
+    width:100%;
+}
+
+.background{
+    position: inherit;
+    z-index:0;
+    width: 100%;
+    height: 100%;
+    opacity: 10%;
+}
+
+.header{
+    position: inherit;
+    z-index: 2;
+    width: 100%;
+    height: 20%;
+    top: 12%;
+}
+
+.header h1{
+    text-align: center;
+    font-family: lato,cambria ,serif;
+    font-weight: bold;
+    font-size: 5rem;
+    color: whitesmoke;
+}
+
+.loginForm{
+    position: inherit;
+    z-index: 2;
+    width: 100%;
+    height: 30%;
+    top: 45%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.loginForm form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input label{
+    display: none;
+}
+
+.input input, .input select{
+    width: 50%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 0.7rem;
+    font-size: 1rem;
+    font-family: lato,cambria ,serif;
+    font-weight:400;
+    background-color: whitesmoke;
+    transition: 0.25s ease-in-out;
+}
+
+.input select{
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fthenounproject.com%2Fbrowse%2Ficons%2Fterm%2Farrow-down%2F&psig=AOvVaw0L-bHiiUJOkoBUzsfsoDdO&ust=1708847750463000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIDcqIvAw4QDFQAAAAAdAAAAABAZ');
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+}
+
+.input select option{
+    background-color: whitesmoke;
+    color:#000428;
+    font-size: 1rem;
+    font-family: lato,cambria ,serif;
+    font-weight:400;
+}
+
+.input select option:focus{
+    background-color: rgb(213, 214, 212);
+}
+
+
+.input input[type="submit"]{
+    background-color: #e9e93b;
+    color: #000428;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input input:focus{
+    outline: none;
+}
+
+.input input::placeholder{
+    color: #000428;
+}
+
+.input input:hover{
+    background-color: rgb(213, 214, 212);
+}
+
+.input input[type="submit"]:hover{
+    background-color: #079822;
+    transform: scale(1.03);
+}
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nustEBill/login.org</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="template.css"> 
+        <link rel="stylesheet" href="body2.css"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    </head>
+
+    <body>
+        <header>
+            <div class="bar leftBar">
+                <p class="title">NUST E-Bill System</p>
+            </div>
+            <div class="bar rightBar">
+                <ul class="nav">
+                    <li class="navLink"><a id="prevPage" href=""><i class="fa fa-arrow-left"></i></a></li>
+                    <li class="navLink"><a href="landingPage.html"><i class="fa fa-home"></i></a></li>
+                    <div class="dropdown ">
+                        <button class="dropbtn"><i class="fa fa-bars"></i></button>
+                        <div class="dropdown-content">
+                            <a href="loginPage.html">Login</a>
+                            <a>Contact Us</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+
+            <img class="background" src="power lines.jpg" alt="power lines">
+
+            <div class="header">
+                <h1>C U S T O M E R</h1>
+            </div>
+
+            <div class="loginForm">
+                <form id="addCustomer" method="post">
+                    <div class="input">
+                        <label for="custName">Customer Name</label>
+                        <input type="text" name="custName" id="custName" placeholder="Enter Customer Name" required>
+                    </div>
+                    <div class="input">
+                        <label for="cnic">CNIC</label>
+                        <input type="text" name="cnic" id="cnic" placeholder="Enter CNIC" required>
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                    </div>
+                    <div class="input">
+                        <label for="custAddress">Address</label>
+                        <input type="text" name="custAddress" id="custAddress" placeholder="Enter Address" required>
+                    </div>
+                    <div class="input">
+                        <label for="custCity">City</label>
+                        <input type="text" name="custCity" id="custCity" placeholder="Enter City" required>
+                    </div>
+                    <div class="input">
+                        <label for="custProvince">Province</label>
+                        <input type="text" name="custProvince" id="custProvince" placeholder="Enter Province" required>
+                    </div>
+                    <div class="input">
+                        <label for="custZip">ZIP Code</label>
+                        <input type="text" name="custZip" id="custZip" placeholder="Enter ZIP Code" required>
+                    </div>
+                    <div class="input">
+                        <input type="submit" value="Add">
+                    </div>
+                </form>
+            </div>
+
+        </main>
+
+        <footer>
+            <a href="https://www.linkedin.com/in/abdul-hannan-amir-586b95258/" class="icon" target="_blank" >
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <div class="footer">
+                <p>Copyright © 2024 <a href="https://nust.edu.pk" target="_blank">NUST</a> E-BILL | Privacy Policy | <a href="https://nust.edu.pk/about-us/resources-offices/" target="_blank">About Us</a></p>
+                <hr>
+            </div>
+        </footer>
+        
+        <script src="addCustomerPage.js"> </script>
+        <script src="prevPage.js"></script>
+
+    </body>
+</html>

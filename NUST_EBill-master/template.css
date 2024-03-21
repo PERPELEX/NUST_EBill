@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    width: 98vw;
+    padding:0;
+    margin:0;
+    overflow: none;
+    background: linear-gradient(to right,#36d1dc ,#5b86e5);
+}
+
+header{
+    display:flex;
+    
+}
+
+.bar{
+    padding:0;
+    margin:0;
+    height:10vh;
+    min-height: 60px;
+    
+}
+
+.rightBar{
+    position: absolute;
+    width: 52%;
+    left: 48%;
+    background: linear-gradient(to right,#141e30,#243b55);
+    z-index: 2;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: none;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navLink{
+    z-index: 3;
+    font-size: 1.8rem;
+    font-family: lato,cambria ,serif;
+    font-weight: bold;
+    width: 8%;
+    margin: 0 6rem;
+}
+
+
+.navLink a{
+    padding: 0.5rem;
+    position: relative;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.2s ease;
+}
+
+.navLink a:hover{
+    color: rgb(0, 225, 255);
+    font-size: 2.1rem;
+    
+}
+
+.dropdown{
+    float: left;
+    width: 25%;
+    overflow: hidden;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: whitesmoke;
+    padding: 0.9rem 0;
+    font-size: 1.8rem;
+    border: none;
+    margin: 0rem 6rem;
+    transition: 0.35s ease;
+    padding:0.5;
+    
+  }
+
+.dropbtn:hover{
+    /*color: rgb(0, 225, 255);
+    font-size: 2.1rem;
+    transform: rotate(-180deg);*/
+    animation: barsRotate 0.35s ease-in;
+    color:rgb(0, 225, 255);
+}
+
+.dropbtn:hover ~ .dropdown-content {
+    display: block;
+}
+
+/*.dropbtn-content:hover .dropbtn{
+    color: rgb(0, 225, 255);
+    font-size: 2.1rem;
+}*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000428;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0;
+    margin-left:5.6rem;
+}
+
+.dropdown-content:hover{
+    display: block;
+}
+
+.dropdown-content:hover ~ .dropbtn{
+    color: rgb(0, 225, 255);
+    font-size: 2.1rem;
+}
+
+.dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: lato;
+}
+  
+.dropdown-content a:hover {
+    background-color: #0b0742;
+    border-radius: 1rem;
+}
+
+.leftBar{
+    z-index: 3;
+    position: absolute;
+    width: 55%;
+    left: -5%;
+    background: linear-gradient(to right,#000428,#004e92);
+    transform: skew(-35deg,0);
+}
+
+.title{
+    position: absolute;
+    width:100%;
+    height:100%;
+    padding: 0%;
+    margin:0;
+    top: 20%;
+    text-align: center;
+    font-family: lato ,cambria ,serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: transparent;
+    background: linear-gradient(to right,#f8d90f,#d3dd18);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform: skew(35deg,0);
+}
+
+main{
+
+    position: absolute;
+    top:10%;
+    height:90vh;
+    width:100%;
+}
+
+.background{
+    position: inherit;
+    z-index:0;
+    width: 100%;
+    height: 100%;
+    opacity: 10%;
+}
+
+footer{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 10%;
+    top: 90%;
+}
+
+.footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#141e30,#243b55);
+}
+
+.footer hr{
+    width:38%;
+    border-top: 0.01px solid whitesmoke;
+    margin:0;
+    padding: 0%;
+}
+
+.footer p{
+    color:whitesmoke;
+    font-size: 0.7rem;
+    font-family: lato,cambria ,serif;
+    letter-spacing: 0.15rem;
+    word-spacing: 0.5rem;
+}
+
+.footer p a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.footer p a:hover{
+    color: rgb(0, 225, 255);
+    transition: 0.1s ease-in-out;
+    top: -0.1rem;
+    left: -0.1rem;
+}
+
+.icon{
+    position: absolute;
+    top:35%;
+    left: 97%;
+    z-index: 2;
+    color: whitesmoke;    
+    font-size: 1.5rem;
+}
+
+.icon:hover{
+    color: rgb(0, 225, 255);
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes barsRotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    99%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
